@@ -13,7 +13,7 @@
         <nav>
             <a href="index.php" class="link-menu">Home</a>
             <a href="listadefilmes.php" class="link-menu">Filmes</a>
-            <a href="index.php" class="link-menu">Home</a>
-            <a href="index.php" class="link-menu">Home</a>
+            <a href="listadenoticias.php" class="link-menu">Noticias</a>
+            <a href="contato.php" class="link-menu">Contato</a>
         </nav>
     </header>

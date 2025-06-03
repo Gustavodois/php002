@@ -1,13 +1,13 @@
 <?php
 include "cabecalho.php";
-include "banner.php";
+
 ?>
 
 <h2 class="subtitulo">Todos os filmes</h2>
 <div class="lista-filmes">
     <div class="card-filme">
             <img src="imagem/Logan_Poster.jpg" width="300" height="500">
-            <h3 class="filme-texto">Logan</h3>
+            <a href="umfilme.php"><h3 class="filme-texto">Logan</h3></a>
             <span class="filme-texto">⭐ 10/10</span>
         </div>
         <div class="card-filme">
