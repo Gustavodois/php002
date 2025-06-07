@@ -1,11 +1,10 @@
 
 <?php
 
-
     $dinheiroAtual = $_POST['dinheiro'];
 
-    echo "Você converteu : $dinheiroAtual, para";
+    $dolar = ($dinheiroAtual / 5.56); 
 
-
+    echo "Você converteu : $dinheiroAtual R$, para " . number_format($dolar, 2, ',', '.') . " USD.";
 
 ?>
