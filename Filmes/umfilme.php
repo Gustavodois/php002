@@ -1,15 +1,9 @@
-<?php
-include "cabecalho.php";
-?>
-
+<?php include "cabecalho.php"; ?>
 <div class="container">
-    <h2 class="subtitulo">Logan</h2>
-    <img src="imagem/Logan_Poster.jpg">
-    <p class="filme-texto">⭐ 10/10</p>
-    <p class="filme-texto"><strong>Categoria:</strong> Aventura</p>
-    <p class="filme-texto"><strong>História:</strong> Dinossauros correndo atrás de pessoas</p>
+    <h2>Jurassic Park</h2>
+    <img src="img/filme1.webp">
+    <p>⭐ 10/10</p>
+    <p><strong>Categoria:</strong> Aventura</p>
+    <p><strong>História:</strong> Dinossauros correndo atrás de pessoas</p>
 </div>
-
-<?php
-include "rodape.php";
-?>
+<?php include "rodape.php"; ?>

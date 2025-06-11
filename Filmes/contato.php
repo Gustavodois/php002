@@ -1,10 +1,6 @@
-
 <?php
 include "cabecalho.php";
-
-
 ?>
-
 <div class="form-container">
     <h2>Fale com a gente 🎬</h2>
     <form action="resposta.php" method="post">
@@ -20,7 +16,4 @@ include "cabecalho.php";
         <button type="submit">Enviar</button>
     </form>
 </div>
-
-<?php
-include "rodape.php";
-?>
+<?php include "rodape.php"; ?>

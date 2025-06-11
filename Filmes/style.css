@@ -13,7 +13,7 @@ header {
 }
 
 .banner {
-    height: 500px;  
+    height: 500px;
     width: 100%;
     object-fit: cover;
     margin-bottom: 30px;
@@ -148,7 +148,7 @@ button:hover {
     }
 }
 
-.container{
+/* .container{
     width: 900px;
     margin: 0 auto;
     display: flex;
@@ -167,32 +167,4 @@ button:hover {
 
 .container p{
     margin: 0 50px;
-}
-
-.titulo{
-    font-family:"Poppins";
-    font-size: 48px;
-    
-}
-
-.subtitulo{
-    font-family:"Poppins";
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px;
-}
-
-.filme-texto{
-    font-family:"Poppins";
-    font-size: 24px;
-
-}
-
-.link-menu{
-    font-family:"Poppins";
-    font-size: 36px;
-    text-decoration: none;
-    color:black;
-    padding-left: 20px;
-}
+} */
