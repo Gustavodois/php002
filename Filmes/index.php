@@ -6,27 +6,27 @@ include "banner.php";
     <h2 class="display-5">Melhores avaliações</h2>
 
     <div class="row mb-5">
+        <?php
+        /* inicio da conexão com o BD*/
+        $servidor = 'localhost';
+        $bd = 'bd_filmes';
+        $usuario = 'root';
+        $senha = ''; 
+
+        $conexao = mysqli_connect($servidor,$usuario,$senha,$bd);
+        
+        if(!$conexao){
+            die("deu ruim". mysqli_connect_error());
+        }
+
+        echo "deu bom";
+        ?>
         <div class="col-3">
-            <img src="img/filme1.webp" class="img-fluid">
-            <h3>Jurassic Park</h3>
+            <img src="img/filme1.jfif" class="img-fluid">
+            <h3>Capitâ Marvel</h3>
             <span>⭐ 10/10</span>
         </div>
-        <div class="col-3">
-            <img src="img/filme2.jpg" class="img-fluid">
-            <h3>Karate Kid Legends</h3>
-            <span>⭐ 10/10</span>
-        </div>
-        <div class="col-3">
-            <img src="img/filme3.jpg" class="img-fluid">
-            <h3>Lilo e Stitch</h3>
-            <span>⭐ 10/10</span>
-        </div>
-        <div class="col-3">
-            <img src="img/filme4.jpg" class="img-fluid">
-            <h3>Pecadores</h3>
-            <span>⭐ 10/10</span>
-        </div>
-    </div>
+        
 
     <div class="row mt-5">
         <div class="col-6">
@@ -47,4 +47,27 @@ include "banner.php";
         </div>
     </div>
 </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-warning fw-5 mt-5 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Precisa de ajuda?
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ajuda</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Entre em contato através dos nossos canais de comunicação:</p>
+        <p>E-mail: filme@filme.com.br <br> Whatsapp: (11)99999-9999 <br> <a href="contato.php">Formulário de contato</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <?php include "rodape.php"; ?>

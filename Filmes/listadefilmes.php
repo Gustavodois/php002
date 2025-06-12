@@ -6,9 +6,9 @@ include "cabecalho.php";
     <div class="row">
         <div class="col-3 mb-4">
             <div class="card">
-                <img src="img/filme1.webp" class="card-img-top">
+                <img src="img/filme1.jfif" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Jurassic Park</h5>
+                    <h5 class="card-title">Capitâ Marvel</h5>
                     <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
@@ -18,8 +18,8 @@ include "cabecalho.php";
             <div class="card">
                 <img src="img/filme2.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Karate Kid Legends</h5>
-                    <p class="card-text">⭐ 5/10</p>
+                    <h5 class="card-title">Em Ritmo De Fuga</h5>
+                    <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
             </div>
@@ -28,17 +28,17 @@ include "cabecalho.php";
             <div class="card">
                 <img src="img/filme3.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Lilo e Stitch</h5>
-                    <p class="card-text">⭐ 7/10</p>
+                    <h5 class="card-title">Logan</h5>
+                    <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
             </div>
         </div>
         <div class="col-3 mb-4">
             <div class="card">
-                <img src="img/filme4.jpg" class="card-img-top">
+                <img src="img/filme4.jfif" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Pecadores</h5>
+                    <h5 class="card-title">Matrix</h5>
                     <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
@@ -47,9 +47,9 @@ include "cabecalho.php";
         
         <div class="col-3 mb-4">
             <div class="card">
-                <img src="img/filme1.webp" class="card-img-top">
+                <img src="img/filme1.jfif" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Jurassic Park</h5>
+                    <h5 class="card-title">Capitâ Marvel</h5>
                     <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
@@ -59,8 +59,8 @@ include "cabecalho.php";
             <div class="card">
                 <img src="img/filme2.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Karate Kid Legends</h5>
-                    <p class="card-text">⭐ 5/10</p>
+                    <h5 class="card-title">Em Ritmo De Fuga</h5>
+                    <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
             </div>
@@ -69,17 +69,17 @@ include "cabecalho.php";
             <div class="card">
                 <img src="img/filme3.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Lilo e Stitch</h5>
-                    <p class="card-text">⭐ 7/10</p>
+                    <h5 class="card-title">Logan</h5>
+                    <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
             </div>
         </div>
         <div class="col-3 mb-4">
             <div class="card">
-                <img src="img/filme4.jpg" class="card-img-top">
+                <img src="img/filme4.jfif" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Pecadores</h5>
+                    <h5 class="card-title">Matrix</h5>
                     <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
@@ -88,9 +88,9 @@ include "cabecalho.php";
 
         <div class="col-3 mb-4">
             <div class="card">
-                <img src="img/filme1.webp" class="card-img-top">
+                <img src="img/filme1.jfif" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Jurassic Park</h5>
+                    <h5 class="card-title">Capitâ Marvel</h5>
                     <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
@@ -100,12 +100,13 @@ include "cabecalho.php";
             <div class="card">
                 <img src="img/filme2.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Karate Kid Legends</h5>
-                    <p class="card-text">⭐ 5/10</p>
+                    <h5 class="card-title">Em Ritmo De Fuga</h5>
+                    <p class="card-text">⭐ 10/10</p>
                     <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
                 </div>
             </div>
         </div>
+       
         
     </div>
 </div>

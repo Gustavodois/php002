@@ -36,7 +36,7 @@ include "cabecalho.php";
 
         <div class="col-4 mb-4">
             <div class="card">
-                <img src="img/banner.jpg" class="card-img-top">
+                <img src="img/noticia1.png" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Quarteto Fantástico | Diretor revela quadrinhos que inspiraram o novo filme</h5>
                     <a href="umanoticia.php" class="btn btn-primary">Leia mais</a>
