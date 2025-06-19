@@ -7,37 +7,28 @@ include "banner.php";
 
     <div class="row mb-5">
         <?php
-        /* inicio da conexão com o BD*/
-        $servidor = 'localhost';
-        $bd = 'bd_filmes';
-        $usuario = 'root';
-        $senha = ''; 
 
-        $conexao = mysqli_connect($servidor,$usuario,$senha,$bd);
+        include "conexao.php";
         
-        if(!$conexao){
-            die("deu ruim". mysqli_connect_error());
-        }
-
-        /* fim da conexao */
-        
-        $sql = "select * from filmes";
+        $sql = "select * from filmes order by avaliacao desc limit 4";
         $resultado = mysqli_query($conexao,$sql);
         
         //echo "<pre>";
         //print_r($resultado);
         //exit();
+
         while($linha = mysqli_fetch_assoc($resultado)){
           ?>
-          <div class="col-3">
-              
-              <img src="<?=$linha['foto'];?>" class="img-fluid">
+          <div class="col-3 mb-5">
+          <div style="width: 18rem;">
+              <img src="<?=$linha['foto'];?>" class="img-fluid capa-filme">
               <h3><?=$linha['titulo'];?></h3>
-              <span>⭐ <?=$linha['avaliacao'];?>/10</span>
+              <span>⭐ <?=$linha['avaliacao'];?>/10</span><br>
           </div>
+        </div>
         <?php
         }
-
+        mysqli_close($conexao);
         ?>
         
 

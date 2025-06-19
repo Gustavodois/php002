@@ -4,108 +4,30 @@ include "cabecalho.php";
 <div class="container">
     <h2>Todos os filmes</h2>
     <div class="row">
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme1.jfif" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Capitâ Marvel</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme2.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Em Ritmo De Fuga</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme3.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Logan</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme4.jfif" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Matrix</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme1.jfif" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Capitâ Marvel</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme2.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Em Ritmo De Fuga</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme3.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Logan</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme4.jfif" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Matrix</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                </div>
-            </div>
-        </div>
+    <?php
+        /*Conexão com o BD*/
+        include "conexao.php";
 
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme1.jfif" class="card-img-top">
+ 
+        $sql = "select * from filmes order by titulo asc";
+        $resultado = mysqli_query($conexao, $sql);
+ 
+        while ($linha = mysqli_fetch_assoc($resultado)) {
+        ?>
+            <div class="col-3 mb-5">
+            <div style="width: 18rem;">
+                <img src="<?= $linha['foto']; ?>" class="img-fluid capa-filme">
                 <div class="card-body">
-                    <h5 class="card-title">Capitâ Marvel</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
+                    <h5 class="card-title"><?php echo mb_strimwidth($linha['titulo'],0,20,"..."); ?></h5>
+                    <p class="card-text">⭐ <?= $linha['avaliacao']; ?>/10</p>
+                    <a href="umfilme.php?id=<?= $linha['id'] ?>" class="btn btn-primary">Veja detalhes</a>
                 </div>
             </div>
         </div>
-        <div class="col-3 mb-4">
-            <div class="card">
-                <img src="img/filme2.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Em Ritmo De Fuga</h5>
-                    <p class="card-text">⭐ 10/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                </div>
-            </div>
-        </div>
+        <?php
+        }
+        mysqli_close($conexao);
+    ?>
        
         
     </div>
