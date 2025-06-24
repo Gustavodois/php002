@@ -30,21 +30,18 @@
           ?>
         
         <div class="container text-center"> 
-            <div class="row align-items-end"> 
+            <div class="row align-items-end mx-5 mt-5"> 
               <div class="col">
-              <h2><?=$linha['titulo'];?></h2>
+              
               <img src="<?=$linha['foto'];?> " style="width: 18rem;" class="img-fluid capa-filme">
               </div>
               <div class="col">
+              <h2><?=$linha['titulo'];?></h2>
               <p>⭐ <?=$linha['avaliacao'];?>/10</p>
               <p><strong>Categoria: </strong> <?=$linha['categoria'];?> </p>
               <p><strong>História:</strong> <?=$linha['historia'];?></p>
               </div>
-            </div>
-           
-
-
-              
+            </div>    
         <?php
         }
         mysqli_close($conexao);
